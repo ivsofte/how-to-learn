@@ -9,9 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-h1, h2, h3, div, p, section {
-  margin: 0;
-}
 
 .header {
   height: 100vh;
@@ -105,7 +102,6 @@ h1, h2, h3, div, p, section {
 }
 
 .two-columns__brief {
-  top: 0;
   width: 175px;
   color: #2f80ed;
   font-size: 18px;
@@ -125,6 +121,8 @@ h1, h2, h3, div, p, section {
   line-height: 34px;
   text-align: left;
   font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .two-columns__span-accent {
@@ -165,7 +163,7 @@ h1, h2, h3, div, p, section {
   justify-content: space-between;
   margin: auto;
   width: 1100px;
-
+  padding-left: 0;
 }
 
 .table__cell {
@@ -191,7 +189,7 @@ h1, h2, h3, div, p, section {
 /* FEYNMAN */
 .feynman {
   background-color: #F2F2F2;
-  height: 790px;
+  min-height: 790px;
   background-image: url(../images/feynman.png);
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -236,14 +234,22 @@ h1, h2, h3, div, p, section {
   background-color: #1f1f1f;
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 
 .table_theme_dark {
   color: white;
-  z-index: 1;
 }
 
 .theme_dark {
+  color: white;
+}
+
+.section-title_theme_dark {
+  color: white;
+}
+
+.section-subtitle_theme_dark {
   color: white;
 }
 
@@ -254,11 +260,10 @@ h1, h2, h3, div, p, section {
   margin-right: 0;
   margin-top: 80px;
   font-size: 18px;
-  z-index: 2;
 }
 
 
-.triangle {
+.kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
@@ -267,6 +272,7 @@ h1, h2, h3, div, p, section {
   right: -210px;
   top: 0;
   background-size: contain;
+  z-index: -1;
 }
 
 /* FOOTER */
@@ -276,6 +282,7 @@ h1, h2, h3, div, p, section {
   min-height: 350px;
   padding-top: 60px;
   padding-bottom: 40px;
+  box-sizing: border-box;
 }
 
 .footer__columns {
@@ -284,7 +291,7 @@ h1, h2, h3, div, p, section {
   justify-content: space-between;
   position: relative;
   width: 90%;
-  min-height: 350px;
+  min-height: 250px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -301,12 +308,22 @@ h1, h2, h3, div, p, section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__column_content-info {
   margin-left: auto;
   margin-right: auto;
   flex: 0 1.5 auto;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__column_content-social {
@@ -316,6 +333,11 @@ h1, h2, h3, div, p, section {
   text-decoration: none;
   list-style: none;
   flex: 0 2 auto;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo_place_footer {
@@ -333,7 +355,6 @@ h1, h2, h3, div, p, section {
   margin-top: 18px;
   bottom: 0;
   left: 0;
-  position: absolute;
 }
 
 .footer__column-heading {
@@ -354,10 +375,6 @@ h1, h2, h3, div, p, section {
   padding: 0;
 }
 
-.color_links {
-  text-decoration: none;
-  color: white;
-}
 
 .footer__social-icon {
   background-size: contain;
@@ -373,4 +390,6 @@ h1, h2, h3, div, p, section {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  color: white;
 }
