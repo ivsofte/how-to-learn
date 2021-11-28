@@ -316,8 +316,6 @@
 }
 
 .footer__column_content-info {
-  margin-left: auto;
-  margin-right: auto;
   flex: 0 1.5 auto;
   width: 100%;
   margin-top: 0;
@@ -328,8 +326,6 @@
 
 .footer__column_content-social {
   margin-bottom: 16px;
-  margin-left: auto;
-  margin-right: auto;
   text-decoration: none;
   list-style: none;
   flex: 0 2 auto;
