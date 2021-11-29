@@ -333,7 +333,7 @@
   margin-right: auto;
 }
 
-.footer__column_content-info {
+.footer__column_content_info {
   flex: 0 1.5 auto;
   width: 100%;
   margin-top: 0;
@@ -342,7 +342,7 @@
   margin-right: auto;
 }
 
-.footer__column_content-social {
+.footer__column_content_social {
   margin-bottom: 16px;
   text-decoration: none;
   list-style: none;
