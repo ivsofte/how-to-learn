@@ -1,0 +1,10 @@
+.footer__column_content_social {
+  margin-bottom: 16px;
+  text-decoration: none;
+  list-style: none;
+  flex: 0 2 auto;
+  width: 100%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
